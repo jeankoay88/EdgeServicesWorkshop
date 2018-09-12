@@ -56,7 +56,7 @@
     
     echo -e "\nLaunching WebGoat EC2...."
     
-    EC2OUTPUT=`aws ec2 run-instances --image-id ami-0da69443d6d7e455b --count 1 --instance-type t2.large --key-name **fabtan**  --security-group-ids $SGIDEC2 --subnet-id $INTERNALSUBNETID --output text` ;
+    EC2OUTPUT=`aws ec2 run-instances --image-id ami-0da69443d6d7e455b --count 1 --instance-type t2.large --key-name $NAME  --security-group-ids $SGIDEC2 --subnet-id $INTERNALSUBNETID --output text` ;
     
     EC2ID=`echo $EC2OUTPUT | awk -F' ' '{print $9}'`
     
