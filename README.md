@@ -1,3 +1,0 @@
-# Edge Services Workshop
-
-**WebGoat** is a deliberately insecure web application maintained by [OWASP](http://www.owasp.org) designed to teach web application security lessons. Users must demonstrate their understanding of a security issue by exploiting a real vulnerability in the WebGoat applications. For example, in one of the lessons the user must use [SQL injection](https://www.owasp.org/index.php/SQL_injection "SQL injection") to steal fake credit card numbers. The application aims to provide a realistic teaching environment, providing users with hints and code to further explain the lesson.
