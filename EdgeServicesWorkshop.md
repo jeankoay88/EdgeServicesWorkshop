@@ -327,7 +327,7 @@ X-Amz-Cf-Id: ZwCHqp0fV5A3y5HNKvqpcqDM6DX_uNTnUI9foPmmnKmx2bKVMqtM9g==
 <p>On your “Developer Tools”, select “Network”</p>
 </li>
 <li>
-<p>Enter username:<code>guest</code>, username: <code>guest</code> to log in to WebGoat webApp</p>
+<p>Enter username:<code>guest</code>, password: <code>guest</code> to log in to WebGoat webApp</p>
 </li>
 <li>
 <p>On the left-hand side, select <strong>“Injection Flaws”</strong> and then select “String SQL Injection”</p>
