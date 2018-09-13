@@ -236,7 +236,7 @@ e) Click Create Behaviour
 <p>On your Google Chrome, enter url <code>http://&lt;alb endpoint&gt;.ap-southeast-1.elb.amazonaws.com/WebGoat</code></p>
 </li>
 <li>
-<p>On Google Chrome, open up “View-&gt;Developer-&gt;Developer Tools”. Option: if using Firefox, then it will be <kbd>ctrl+shift+j </kbd> or <kbd>cmd+shift+j </kbd> (Mac)</p>
+<p>On Google Chrome, open up “View-&gt;Developer-&gt;Developer Tools” or <kbd>cmd+opt+i </kbd>. Option: if using Firefox, then it will be <kbd>ctrl+shift+j </kbd> or <kbd>cmd+shift+j </kbd> (Mac)</p>
 </li>
 <li>
 <p>On your “Developer Tools”, select “Network”</p>
