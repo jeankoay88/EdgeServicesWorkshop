@@ -4,13 +4,13 @@
     
     [ -z "$NAME" ] && echo "NAME ARGUMENT not filled" && exit 1
     
-    VPCID=<fill this up from Cloudformation output>  #vpc-08669f89456f0780b
+    VPCID='<VPCID>'  #vpc-08669f89456f0780b
     
-    INTERNALSUBNETID=<fill this up from Cloudformation output >  #subnet-0d69689899103420c
+    INTERNALSUBNETID='<PrivateSubnet1AID>'  #subnet-0d69689899103420c
     
-    EXTERNALSUBNETID1=<fill this up from Cloudformation output >  #subnet-03d51c545098e37f7
+    EXTERNALSUBNETID1='<PublicSubnet1ID>'  #subnet-03d51c545098e37f7
     
-    EXTERNALSUBNETID2=<fill this up from Cloudformation output >  #subnet-08a1c3de0878c399b
+    EXTERNALSUBNETID2='<PublicSubnet2ID>'  #subnet-08a1c3de0878c399b
     
     ### IAM section is for lab attendees
     
@@ -77,9 +77,7 @@
     echo -e "\nLaunching WebGoat ALB Target Group...."
     
     TGOUTPUT=`aws elbv2 create-target-group --name $NAME-target-ALB --protocol HTTP --port 80 --target-type instance --vpc-id $VPCID \
-    
     --health-check-protocol HTTP --health-check-port 80 --health-check-path "/" --health-check-interval-seconds 5 --health-check-timeout-seconds 4 \
-    
     --healthy-threshold-count 2 --unhealthy-threshold-count 2 --output text`
     
     TGID=`echo $TGOUTPUT | awk -F' ' '{print $10}'`
