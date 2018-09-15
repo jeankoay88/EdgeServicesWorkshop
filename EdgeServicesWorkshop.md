@@ -24,10 +24,10 @@
 <p><strong>What is the goal of this lab?</strong></p>
 <ol>
 <li>
-<p><em>Accelerate Static Content Delivery</em> for better user experience_ – Static content will be cached and delivered nearer to end users with Cloudfront Point of Presence</p>
+<p><em>Accelerate Static Content Delivery</em> for better user experience – Static content will be cached and delivered nearer to end users with Cloudfront Point of Presence</p>
 </li>
 <li>
-<p><em>Accelerate Dynamic Content Deliver</em> for better user experience –_ Dynamic Content will be delivered nearer to end users and accelerated with TCP optimizations.</p>
+<p><em>Accelerate Dynamic Content Deliver</em> for better user experience – Dynamic Content will be delivered nearer to end users and accelerated with TCP optimizations.</p>
 </li>
 <li>
 <p><em>Protect and Mitigate Web App Security Risk</em> – AWS WAF deployed with AWS Cloudfront will proactively block attacks based on Top 10 OWASP Web Vulnerabilities rules eg. SQL Injection, XSS scripting.</p>
@@ -248,7 +248,7 @@ e) Click Create Behaviour
 <li>
 <p>On the left-hand side, select <strong>“Injection Flaws”</strong> and then select “String SQL Injection”</p>
 <p>i) Read description - Fill up the “Enter your last name:” with “Smith”. Observe that you’re getting a success “200” response on Chrome Developer Tool</p>
-<p>ii) Now for the attack on the Database! Fill up the “Enter your last name:” with “Smith’ or ‘x’='x”.</p>
+<p>ii) Now for the attack on the Database! Fill up the “Enter your last name:” with <code>Smith' or 'x'='x</code>.</p>
 <blockquote>
 <p>Observe that you’ve successfully executed a SQL Injection on the vulnerable website, and that the website has listed down everyone’s details on the website.</p>
 </blockquote>
@@ -256,7 +256,7 @@ e) Click Create Behaviour
 <li>
 <p>On the left hand side, select <strong>“Cross Site Scripting (XSS)”</strong> and then select “Stored XSS Attack”</p>
 <p>i) Read description - Fill up the “Title:” with “Saying Hello!”, “Message:” with “Just wanted to say hi - since I’m new here”.  Observe that you’re getting a success “200” response.</p>
-<p>ii) Now, for the attack on the Database! Fill up the “Title:” with “Saying Hello Again!”, “Message:” with <code>Just wanted to say hi - since I'm new here&lt;script language="javascript" type="text/javascript"&gt;alert("Uploading a malicious script into the forum. Hopefully I can capture some sensitive data");&lt;/script&gt;.</code></p>
+<p>ii) Now, for the attack on the Database! Fill up the “Title:” with “Saying Hello Again!”, “Message:” with <code>Just wanted to say hi - since I'm new here&lt;script language="javascript" type="text/javascript"&gt;alert("Uploading a malicious script into the forum. Hopefully I can capture some sensitive data");&lt;/script&gt;</code>.</p>
 <blockquote>
 <p>Observe that you’ve successfully executed a XSS attack on the vulnerable website. And that the website has stored a javascript that will be executed for anyone that opens the page.</p>
 </blockquote>
